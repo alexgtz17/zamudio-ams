@@ -1,26 +1,42 @@
 <header class="site-header">
-  <h3 class="site-title">
-    <a href="{{ site.github.url }}/">{{ site.title }}</a>
-  </h3>
-  <nav class="menu-list">
-    {% for item in site.data.settings.menu %}
-      <a href="{{ site.github.url }}/{{ item.folder }}/{{ item.file }}" class="menu-link">{{ item.name }}</a>
-    {% endfor %}
-
-    {% for item in site.data.settings.social %}
-      <a href="{{ item.link }}" class="menu-link" target="_blank"><i class="fa fa-{{ item.icon }}" aria-hidden="true"></i></a>
-    {% endfor %}
-  </nav>
-  <div class="dropdown">
-    <button class="dropbtn"><i class="fa fa-bars" aria-hidden="true"></i></button>
-    <div class="dropdown-content">
+  <div class="navbar" id="nav">
+    <h3 class="site-title">
+      <a href="{{ site.github.url }}/">{{ site.title }}</a>
+    </h3>
+    <nav class="menu-list">
       {% for item in site.data.settings.menu %}
+      <a href="{{ site.github.url }}/{{ item.folder }}/{{ item.file }}" class="menu-link">{{ item.name }}</a>
+      {% endfor %} {% for item in site.data.settings.social %}
+      <a href="{{ item.link }}" class="menu-link" target="_blank"><i class="fa fa-{{ item.icon }}" aria-hidden="true"></i></a>
+      {% endfor %}
+    </nav>
+    <div class="dropdown">
+      <button class="dropbtn"><i class="fa fa-bars" aria-hidden="true"></i></button>
+      <div class="dropdown-content">
+        {% for item in site.data.settings.menu %}
         <a href="{{ site.github.url }}/pages/{{ item.file }}" class="menu-link">{{ item.name }}</a>
-      {% endfor %}
-
-      {% for item in site.data.settings.social %}
+        {% endfor %} {% for item in site.data.settings.social %}
         <a href="{{ item.link }}" class="menu-link" target="_blank"><i class="fa fa-{{ item.icon }}" aria-hidden="true"></i></a>
-      {% endfor %}
+        {% endfor %}
+      </div>
     </div>
   </div>
+  <div class="branding">
+    <h1 class="branding__header">{{ site.title }}</h1>
+    <p class="branding__description">{{ site.description }}</p>
+  </div>
 </header>
+
+<script type="text/javascript">
+  var nav = document.getElementById('nav');
+  window.onscroll = function () {
+    if (window.pageYOffset > 50) {
+      nav.style.background = "black";
+      nav.style.padding = "0px 0px"
+    } else {
+      nav.style.background = "transparent";
+      nav.style.padding = "20px 0px"
+    }
+  }
+
+</script>
