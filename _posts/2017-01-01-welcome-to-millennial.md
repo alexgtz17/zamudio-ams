@@ -4,7 +4,7 @@ title: "Welcome to Millennial!"
 author: "Paul Le"
 categories: documentation
 tags: [documentation,sample]
-image: cuba-1.jpg
+image: https://lh3.googleusercontent.com/4wOiOUJiBiGcBW3I6leB9MO6DHycPTXA3MPxwO951-Qu_HcI8rqzrBrAZG_YmkAiK7cxA-yj1FUtSE1f_LNwPwG7k4kxduGoNj6NrGQR0BjNUIUwdEFXzefS5vC7pdvi1HDWZjy--5c=w2400
 ---
 
 Millennial is a minimalist Jekyll theme. The purpose of this theme is to provide a simple, clean, content-focused blogging platform for your personal site or blog. Below you can find everything you need to get started.
