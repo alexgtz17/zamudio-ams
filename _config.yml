@@ -15,7 +15,7 @@ sass:
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
 title:		           "Zamudio"
-description:	       "Produccion Audio-Musica-Sonido"
+description:	       "Audio-Musica-Sonido"
 author:              "Paul Le"
 
 # RSS 2.0 can be used instead of Atom by uncommenting following two lines
